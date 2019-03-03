@@ -14,4 +14,5 @@
 - jar
 ```
 下载dist目录里面已经编译好的jar包，放到你的classpath中
+注意需要引入pom.xml中对应的依赖库
 ```
