@@ -1,2 +1,6 @@
 target/
 .class
+dist/
+doc/
+.idea/
+*.iml

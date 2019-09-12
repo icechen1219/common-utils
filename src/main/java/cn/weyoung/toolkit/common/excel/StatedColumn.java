@@ -1,7 +1,6 @@
 ///:StatedColumn.java
 package cn.weyoung.toolkit.common.excel;
 
-import cn.weyoung.toolkit.util.ExcelUtil;
 import org.apache.poi.ss.usermodel.Cell;
 
 /**
@@ -57,19 +56,6 @@ public class StatedColumn {
 
     public void setMergedFromColumn(int mergedFromColumn) {
         this.mergedFromColumn = mergedFromColumn;
-    }
-
-    /**
-     * 获取单元格的真实值
-     *
-     * @return
-     */
-    public Object getCellValue() {
-        if (merged) {
-            return ExcelUtil.getCellValue(cell.getSheet().getRow(mergedFromRow).getCell(mergedFromColumn));
-        } else {
-            return ExcelUtil.getCellValue(cell);
-        }
     }
 }
 ///:StatedColumn.java
